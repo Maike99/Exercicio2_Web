@@ -9,12 +9,13 @@ function gerarAposta() {
 	for (var i = 0; i < Number(qtdApostas); i++) {
 		var tr = document.createElement("tr");
 		var td1 = document.createElement("td");
+		td1.appendChild(document.createTextNode("Jogo " + (i+1) + "- "));
 		if (tipoJogo == "mega sena") {
-			td1.appendChild(document.createTextNode("Jogo " + (i+1) + "- " + megaSena(qtdNum)));	
+			td1.appendChild(document.createTextNode(megaSena(qtdNum)));	
 		} else if (tipoJogo == "lotofacil") {
-			td1.appendChild(document.createTextNode("Jogo " + (i+1) + "- " + lotoFacil(qtdNum)));	
+			td1.appendChild(document.createTextNode(lotoFacil(qtdNum)));	
 		} else if (tipoJogo == "quina") {
-			td1.appendChild(document.createTextNode("Jogo " + (i+1) + "- " + quina(qtdNum)));
+			td1.appendChild(document.createTextNode(quina(qtdNum)));
 		}
 		
 		tr.appendChild(td1);
