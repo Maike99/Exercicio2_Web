@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CEF</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Gerador aleatorio de apostas</h1>
+
+		<hr>
+
+		<div class="form-group">
+			<label for="sel1">Tipo do jogo</label>
+			<select class="form-control" id="sel1">
+				<option id="opcao">mega sena</option>
+				<option id="opcao">lotofacil</option>
+				<option id="opcao">quina</option>	
+			</select>
+		</div>
+
+		<div class="form-group">
+			<label>Qtd. de numeros apostados por jogo</label><input type="number" class="form-control" name="qtdNumeros" id="qtdNumeros">
+		</div>
+
+		<div class="form-group">
+			<label>Qtd. de jogos a serem gerados</label><input type="number" class="form-control" name="qtdJogos" id="qtdJogos">
+		</div>
+
+		<button class="btn btn-success btn-sm" onclick="gerarAposta()">Gerar Aposta</button><br>
+
+
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<td>Jogo</td>
+				</tr>
+			</thead>
+			<tbody id="tabela">
+				
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
