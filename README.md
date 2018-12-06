@@ -1,2 +1,7 @@
-# Exercicio2_Web
-Construa um gerador aleatório de apostas para loterias da Caixa Econômica federal utilizando Html5, Bootstrap e JavaScript.
+# Gerador aleatorio simples
+
+O código destina-se a gerar aleatorimente 6 número simulando uma apostas simple da mega sena.
+
+Tecnológias utilizadas:
+
+Html5, Bootstrap e JavaScript.
